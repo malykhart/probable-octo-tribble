@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    window.onload = function() {
+        // Получите параметр ссылки на документ из URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var docUrl = urlParams.get('docUrl');
+        
+        // Выполните полное перенаправление
+        if (docUrl) {
+            window.location.href = docUrl;
+        }
+    };
+  </script>
+</head>
+<body>
+  <p>Перенаправление...</p>
+</body>
+</html>
